@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Саратов</string>
+    <string name="menu">Меню</string>
+    <string name="report1">1) Описание проблемы</string>
+    <string name="report2">2) Тип проблемы</string>
+    <string name="report3">3) Степень опасности</string>
+    <string name="report4">4) Анонимность</string>
+    <string name="report5">5) Контакты</string>
+    <string name="report6">6) Публичность</string>
+    <string name="report7">7) Проверьте данные</string>
+    <string name="faq">FAQ</string>
+    <string name="contacts">Контакты</string>
+    <string name="setting">Настройки</string>
+    <string name="reestor_text_view_menu">Реестр проблем</string>
+    <string name="faq_text_view_menu">FAQ</string>
+    <string name="contact_text_view_menu">Контакты</string>
+    <string name="obrat_svaz_text_view_menu">Обратная связь</string>
+    <string name="hernorvik_text_view_menu">Черновик</string>
+    <string name="nactoiki_text_view_menu">Настройки</string>
+    <string name="niz_navigator_profil">Профиль</string>
+    <string name="niz_navigator_map">Карты</string>
+    <string name="niz_navigator_new">Новости</string>
+    <string name="niz_navigator_soobshit">Сообщить</string>
+    <string name="niz_navigator_menu">Меню</string>
+    <string name="saratov_report_2_textview">Мы автоматически выбрали тип Вашей проблемы. Если проблема определена неверно - нажмите "Изменить"</string>
+    <string name="saratov_report_2_problem_tip">Тип проблемы</string>
+    <string name="AnonTypeDescription">Ваше имя не будет видно исполнителю, но Вы также несёте полную ответственность за представленную Вами информацию.</string>
+    <string name="NotAnonTypeDescription">Ваше имя будет видно исполнителю, Вы несёте полную ответственность за представленную Вами информацию.</string>
+    <string name="PubTypeDescription">Ваша заявка будет видна всем, Вы несёте полную ответственность за представленную Вами информацию.</string>
+    <string name="NotPubTypeDescription">Ваша заявка будет видна только исполнителю, Вы несёте полную ответственность за представленную Вами информацию.</string>
+    <string name="boxAnonText">АНОНИМНО</string>
+    <string name="boxNotAnonText">НЕ АНОНИМНО</string>
+    <string name="txtViewWarningText">Вы понесете ответственность в случае ложной информации в соответствии с...</string>
+</resources>

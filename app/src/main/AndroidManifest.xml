@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.saratov">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+<application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+
+        android:supportsRtl="true"
+        android:theme="@style/AppTT">
+        <activity android:name=".SaratovContacts" android:label="@string/contacts"  android:noHistory="true"  android:screenOrientation="portrait"></activity>
+        <activity android:name=".SaratovFaq" android:label="@string/faq" android:noHistory="true"   android:screenOrientation="portrait"/>
+        <activity android:name=".SaratovSettings" android:label="@string/setting"  android:noHistory="true"  android:screenOrientation="portrait"/>
+        <activity
+            android:name=".SaratovReport7"
+            android:label="@string/report7"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SaratovReport6">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SaratovReport6" />
+        </activity>
+        <activity
+            android:name=".SaratovReport6"
+            android:label="@string/report6"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SaratovReport5">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SaratovReport4" />
+        </activity>
+        <activity
+            android:name=".SaratovReport5"
+            android:label="@string/report5"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SaratovReport4">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SaratovReport4" />
+        </activity>
+        <activity
+            android:name=".SaratovReport4"
+            android:label="@string/report4"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".SaratovReport3">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SaratovReport3" />
+        </activity>
+        <activity
+            android:name=".SaratovReport3"
+            android:screenOrientation="portrait"
+            android:label="@string/report3"
+            android:parentActivityName=".SaratovReport2">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SaratovReport2" />
+        </activity>
+        <activity
+            android:name=".SaratovReport2"
+            android:screenOrientation="portrait"
+            android:label="@string/report2"
+            android:parentActivityName=".SaratovReport1">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SaratovReport1" />
+        </activity>
+        <activity
+            android:name=".SaratovReport1"
+            android:screenOrientation="portrait"
+            android:label="@string/report1"
+            android:parentActivityName=".SaratovMenu">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SaratovMenu" />
+        </activity>
+        <activity
+            android:name=".SaratovMenu"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:label="@string/niz_navigator_menu" />
+        <activity
+            android:name=".SaratovJa"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SaratovMap"
+            android:noHistory="true"
+            android:screenOrientation="portrait"
+            android:label="@string/niz_navigator_map" />
+    </application>
+
+</manifest>

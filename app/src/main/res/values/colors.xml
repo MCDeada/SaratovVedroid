@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#1B7E22</color>
+    <color name="colorBel">#FFF</color>
+    <color name="colorSer">#646464</color>
+    <color name="bottom_navigation_item_background_colors">#4E4B4B</color>
+    <color name="seek_bar_start">#FFC143</color>
+    <color name="seek_bar_center">#FF5700</color>
+    <color name="seek_bar_end">#570C00</color>
+    <color name="blue">#5180b8</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="hit_gray">#a4adb6</color>
+</resources>

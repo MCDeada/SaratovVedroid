@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaratovReport7">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/listFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtSubjectCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="10dp"
+            android:text="Тема: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtSubjectInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Ямы на дорогах"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtSubjectCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtSubjectCheck" />
+
+        <TextView
+            android:id="@+id/txtOpisanieCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Описание:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtSubjectCheck" />
+
+        <TextView
+            android:id="@+id/txtDescriptionInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Ямы на дорогах..."
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtOpisanieCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtOpisanieCheck" />
+
+        <TextView
+            android:id="@+id/txtTypeCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Тип: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOpisanieCheck" />
+
+        <TextView
+            android:id="@+id/txtTypeInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Ямы на дорогах"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtTypeCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtTypeCheck" />
+
+        <TextView
+            android:id="@+id/txtDangerCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Опасность:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtTypeCheck" />
+
+        <TextView
+            android:id="@+id/txtDangerInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Угроза жизни двум и более людям"
+            app:layout_constraintStart_toEndOf="@+id/txtDangerCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtDangerCheck" />
+
+        <TextView
+            android:id="@+id/txtAnonimCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Анонимно: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDangerCheck" />
+
+        <TextView
+            android:id="@+id/txtAnonInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Нет"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtAnonimCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtAnonimCheck" />
+
+        <TextView
+            android:id="@+id/txtNameCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Имя:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtAnonimCheck" />
+
+        <TextView
+            android:id="@+id/txtMailCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Почта:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNameCheck" />
+
+        <TextView
+            android:id="@+id/txtPhoneCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Телефон:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtMailCheck" />
+
+        <TextView
+            android:id="@+id/txtNameInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Александр"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtNameCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtNameCheck" />
+
+        <TextView
+            android:id="@+id/txtMailInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="pochta@gmail.com"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtMailCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtMailCheck" />
+
+        <TextView
+            android:id="@+id/txtPhoneInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="565451"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtPhoneCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtPhoneCheck" />
+
+        <TextView
+            android:id="@+id/txtPublicyCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Публичность:"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPhoneCheck" />
+
+        <TextView
+            android:id="@+id/txtPublicInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Нет"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtPublicyCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtPublicyCheck" />
+
+        <TextView
+            android:id="@+id/txtDataCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Дата: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtPublicyCheck" />
+
+        <TextView
+            android:id="@+id/txtDataInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="10.05.2019"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtDataCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtDataCheck" />
+
+        <TextView
+            android:id="@+id/txtAdressCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"
+            android:text="Адрес: "
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDataCheck" />
+
+        <TextView
+            android:id="@+id/txtAdressInfoCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:text="Ул. Белоглинская д.4"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/txtAdressCheck"
+            app:layout_constraintTop_toTopOf="@+id/txtAdressCheck" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.saratov.FragmentMenuNavig"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

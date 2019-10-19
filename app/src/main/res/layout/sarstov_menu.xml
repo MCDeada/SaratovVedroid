@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaratovMenu">
+
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#DADADA"
+        android:orientation="vertical"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        app:layout_constraintBottom_toTopOf="@+id/listFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:id="@+id/profileInfoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="#FFF"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/reportImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:tint="@color/hit_gray"
+                app:srcCompat="@drawable/ic_photo"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/nameMenuText"
+                android:layout_width="337dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:gravity="center_vertical"
+                android:text="Денис Андриянов"
+                android:textColor="@color/black"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuReportArchiveLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/linear_layout_on"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:tint="@color/hit_gray"
+                app:srcCompat="@drawable/ic_reestr_menu" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/reestor_text_view_menu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/ic_next_menu"
+                android:tint="@color/hit_gray" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuFaqLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/linear_layout_on"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:tint="@color/hit_gray"
+                app:srcCompat="@drawable/ic_faq_menu"
+                tools:ignore="VectorDrawableCompat" />
+
+            <TextView
+                android:id="@+id/textView313"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/faq_text_view_menu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView514"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/ic_next_menu"
+                android:tint="@color/hit_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuContactLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/linear_layout_on"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView5147"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:tint="@color/hit_gray"
+                app:srcCompat="@drawable/ic_contacts_menu" />
+
+            <TextView
+                android:id="@+id/textView1119"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/contact_text_view_menu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView656"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/ic_next_menu"
+                android:tint="@color/hit_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuFeedbackLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/linear_layout_on"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView142"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:tint="@color/hit_gray"
+                app:srcCompat="@drawable/ic_obrat_svaz_menu" />
+
+            <TextView
+                android:id="@+id/textView333"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/obrat_svaz_text_view_menu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView154"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/ic_next_menu"
+                android:tint="@color/hit_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuDraftsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/linear_layout_on"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView547"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:tint="@color/hit_gray"
+                app:srcCompat="@drawable/ic_hernovic_menu" />
+
+            <TextView
+                android:id="@+id/textView119"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/hernorvik_text_view_menu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView6546"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/ic_next_menu"
+                android:tint="@color/hit_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/menuSettingsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="5dp"
+            android:background="@drawable/linear_layout_on"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView1042"
+                android:layout_width="54dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:tint="@color/hit_gray"
+                app:srcCompat="@drawable/ic_nastroiki_menu" />
+
+            <TextView
+                android:id="@+id/textView3033"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/nactoiki_text_view_menu"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView1054"
+                android:layout_width="51dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:src="@drawable/ic_next_menu"
+                android:tint="@color/hit_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/listFragment"
+        android:name="com.example.saratov.FragmentMenuNavig"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
